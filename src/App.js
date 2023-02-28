@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Product from './Product';
+import { useState } from "react"
 
 function App() {
+
+  const [cart, setCart] = useState([]);
+  
+  const handler = function(product) {
+    const newCart = [...cart];
+    // console.log(product)
+    newCart.push(product);
+    console.log(newCart);
+    setCart(newCart)
+  }
+  const data = [
+{
+    id: 1,
+    name: "Tesla",
+    price: 5
+},
+{
+    id: 2,
+    name: "LG",
+    price: 4
+}
+
+  ]
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {cart.length}
+      {data.map(item => <Product key={item.id} product={item} onClickHandler={handler}/>)}
+       
+    
+       
     </div>
   );
 }
 
 export default App;
+// https://www.youtube.com/watch?v=C4LoZjzqG_k ***
