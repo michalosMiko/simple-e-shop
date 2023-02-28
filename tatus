@@ -1,0 +1,11 @@
+[33mcommit 7a15a65defe4b3868de7352dde010006639bff19[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: MichalMamula <michalosm@centrum.cz>
+Date:   Tue Feb 28 19:10:03 2023 +0100
+
+    eshop
+
+[33mcommit 3d351c3942870dc8562915785f174ba30c1cad98[m
+Author: MichalMamula <michalosm@centrum.cz>
+Date:   Fri Dec 30 03:50:46 2022 +0100
+
+    Initialize project using Create React App
